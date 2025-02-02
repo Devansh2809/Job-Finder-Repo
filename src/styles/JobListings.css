@@ -1,0 +1,47 @@
+.job-listings {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.job-list {
+    flex: 1;
+    max-width: 300px;
+}
+
+.job-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.job-item:hover {
+    background-color: #f0f0f0;
+}
+
+.job-details {
+    flex: 2;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.job-details form {
+    margin-top: 20px;
+}
+
+.job-details input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.job-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.job-details button:hover {
+    background-color: #0056b3;
+}
