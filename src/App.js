@@ -39,7 +39,10 @@ function App() {
                     path="/job-listings"
                     element={user ? <JobListings user={user} /> : <Navigate to="/login" />}
                 />
-                <Route path="/employer-dashboard" element={user?.type === 'employer' ? <EmployerDashboard /> : <Navigate to="/login" />} />
+                <Route
+                    path="/employer-dashboard"
+                    element={user?.type === 'employer' ? <EmployerDashboard user={user} /> : <Navigate to="/login" />}
+                />
                 <Route path="/add-job" element={user?.type === 'employer' ? <AddJob user={user} /> : <Navigate to="/login" />} />
                 <Route path="/edit-job/:id" element={user?.type === 'employer' ? <EditJob user={user} /> : <Navigate to="/login" />} />
             </Routes>
